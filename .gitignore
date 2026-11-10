@@ -1,0 +1,19 @@
+# 运行时数据：里面是真实主播列表、场次记录、昵称粉丝数，不要提交
+rooms.json
+sessions.json
+state.json
+*.json.tmp
+
+# 推送凭据、微信 AppSecret 等一律只走环境变量
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 备份与临时文件
+*.bak
+*.bak[0-9]
+.DS_Store

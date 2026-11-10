@@ -1,0 +1,15 @@
+[Unit]
+Description=Douyin Live Monitor
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/douyin-monitor
+EnvironmentFile=/etc/douyin-monitor.env
+ExecStart=/usr/bin/python3 /opt/douyin-monitor/app.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
